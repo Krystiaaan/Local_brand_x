@@ -21,6 +21,7 @@ class index extends Page{
             <h2>Wetter for Local Brand X</h2>
             <label for="location">Enter City Name or Postal Code:</label><br>
             <input type="text" id="location" name="location" required><br>
+            <datalist id="suggestions"></datalist> <!--For Suggestions-->
             <label for="country">Country (optional):</label><br>
             <input type="text" id="country" name="country"><br>
             <input type="submit" value="Get Weather">

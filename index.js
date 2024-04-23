@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('mapContainer'),
         defaultLayers.vector.normal.map,
         {
-            zoom: 10,
+            zoom: 12,
             center: { lat: 50.004951, lng: 8.252870 }
         }
     );
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function addMarker(position, id) {
-        const marker = new H.map.Marker(position, {
+        var marker = new H.map.Marker(position, {
             data: {
                 id
             },
@@ -58,4 +58,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     addMarker({ lat: latitude, lng: longitude }, 'New Marker');
 });
-    
+
+//suggestions complete
+window.addEventListener('DOMContentLoaded', (event) =>{
+    var locationInput = document.getElementById('location');
+    locationInput.addEventListener('input',fetchCitySuggestions);
+});
+function fetchCitySuggestions(){
+    var dataList = document.getElementById('suggestions');
+}
