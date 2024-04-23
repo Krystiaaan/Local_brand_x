@@ -1,0 +1,14 @@
+/* I dont know how much styles should i add so i made it just in the mid*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 70px;
+}
