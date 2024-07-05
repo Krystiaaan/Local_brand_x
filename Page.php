@@ -11,7 +11,6 @@ abstract class Page {
     protected function getAPIData(string $location, ?string $country = null): array 
     {
         $endpoint = 'current';
-        $apiKey = '99dfd69eafd44f3ab94f9881f897d92c';
 
         $locationEncoded = urlencode($location);
         $query_params = "postal_code={$location}";
